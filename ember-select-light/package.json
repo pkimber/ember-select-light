@@ -1,6 +1,6 @@
 {
   "name": "@kb/ember-select-light",
-  "version": "2.0.6",
+  "version": "2.0.8",
   "description": "The simple DDAU component built for Ember",
   "keywords": [
     "ember-addon"
@@ -26,25 +26,28 @@
     "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
-    "@embroider/addon-shim": "^1.8.4"
+    "@embroider/addon-shim": "^1.8.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.12",
+    "@babel/core": "^7.22.5",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-decorators": "^7.20.13",
-    "@embroider/addon-dev": "^3.0.0",
+    "@babel/plugin-proposal-decorators": "^7.22.5",
+    "@embroider/addon-dev": "^3.1.1",
     "@rollup/plugin-babel": "^6.0.3",
-    "rollup": "^3.12.0",
+    "rollup": "^3.25.1",
     "rollup-plugin-copy": "^3.4.0"
   },
   "engines": {
-    "node": "10.* || >= 12"
+    "node": "16.* || >= 18"
   },
   "ember": {
     "edition": "octane"
   },
   "ember-addon": {
-    "app-js": {},
+    "app-js": {
+      "./components/select-light.js": "./dist/_app_/components/select-light.js",
+      "./helpers/is-equal.js": "./dist/_app_/helpers/is-equal.js"
+    },
     "main": "addon-main.cjs",
     "type": "addon",
     "version": 2
