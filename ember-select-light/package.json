@@ -1,6 +1,6 @@
 {
   "name": "@kb/ember-select-light",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "The simple DDAU component built for Ember",
   "keywords": [
     "ember-addon"
